@@ -1,1 +1,1 @@
-# Reminders CLI app
+# RESTful http api in Golang
