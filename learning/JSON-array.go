@@ -22,6 +22,7 @@ func main() {
 
 func test(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-type", "application/json")
+
 	json.NewEncoder(w).Encode(struct {
 		ID string
 	}{"555"})
@@ -30,6 +31,8 @@ func test(w http.ResponseWriter, r *http.Request) {
 func addItem(w http.ResponseWriter, r *http.Request) {
 	routeVariable := mux.Vars(r)["item"]
 	data = append(data, routeVariable)
+
+	w.Header().Set("Content-type", "application/json")
 
 	json.NewEncoder(w).Encode(data)
 }
