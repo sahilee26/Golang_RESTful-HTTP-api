@@ -1,3 +1,5 @@
+
+// learning to send string 
 package main
 
 import (
