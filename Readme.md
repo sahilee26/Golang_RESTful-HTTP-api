@@ -5,7 +5,7 @@ Learning folder contains various code snippets that I coded during learning to b
 ## Dependencies
 web toolkit mux package
 
-### About
+### About API
 Implemented all CRUD(create, read, update and delete) operations along with PATCH 
 
 ![output](http-api.PNG)
